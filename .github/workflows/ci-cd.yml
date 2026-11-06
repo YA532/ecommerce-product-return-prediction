@@ -53,5 +53,5 @@ jobs:
           context: .
           push: ${{ github.event_name != 'pull_request' }}
           tags: |
-            ghcr.io/${{ github.repository_owner }}/ecommerce-product-return:latest
-            ghcr.io/${{ github.repository_owner }}/ecommerce-product-return:${{ github.sha }}
+            ghcr.io/ya532/ecommerce-product-return:latest
+            ghcr.io/ya532/ecommerce-product-return:${{ github.sha }}
