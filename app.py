@@ -15,7 +15,7 @@ model = joblib.load(MODEL_PATH)
 app = FastAPI(
     title="E-Commerce Product Return Prediction API",
     description="Predict whether an e-commerce product will be returned.",
-    version="1.0"
+    version="1.1"
 )
 
 
@@ -37,7 +37,9 @@ class ProductDetails(BaseModel):
 @app.get("/")
 def home():
     return {
-        "message": "E-Commerce Product Return Prediction API is running"
+        "message": "E-Commerce Product Return Prediction API is running",
+        "version": "1.1",
+        "deployment": "Updated through GitHub Actions CI/CD"
     }
 
 
